@@ -1,6 +1,6 @@
 from init import *
 
-username = input('What is your Instagram username?\n')
+username = input('shoecollecter11?\n')
 print('Getting followers... Please do not terminate the program.')
 
 class Instagram:
@@ -9,12 +9,12 @@ class Instagram:
 
     def go_to_website(self):
         sleep(4)
-        self.browser.get('https://tolinay.com/instagram-takipci-hilesi')
+        self.browser.get('https://www.instagram.com/shoecollecter11')
         sleep(4)
 
         try:
             uid = self.browser.find_element(By.XPATH, '/html/body/div[3]/div[2]/div[2]/form/div/div[1]/input')
-            uid.send_keys(username)
+            uid.send_keys(shoecollecter11)
             sleep(5)
             button = self.browser.find_element(By.XPATH, '/html/body/div[3]/div[2]/div[2]/form/div/div[3]/button')
             button.click()
@@ -34,8 +34,8 @@ class Instagram:
     def close_browser(self):
         Setup.close_browser(self)
 
-ig = Instagram()
+ig = Instagram(shoecollecter11)
 ig.setup()
 
 while(True):
-    ig.go_to_website()
+    ig.go_to_website(https://www.instagram.com/shoecollecter11/)
